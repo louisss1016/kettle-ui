@@ -5,8 +5,8 @@ type Tone = "sun" | "tea" | "tunes" | "strings" | "lilac" | "sky" | "paper" | "i
 
 const TONE: Record<Tone, string> = {
   sun: "bg-sun text-ink",
-  tea: "bg-tea text-paper",
-  tunes: "bg-tunes text-paper",
+  tea: "bg-tea text-ink",
+  tunes: "bg-tunes text-ink",
   strings: "bg-strings text-ink",
   lilac: "bg-lilac text-ink",
   sky: "bg-sky text-ink",

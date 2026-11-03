@@ -10,17 +10,17 @@ type Tone = "ink" | "tea" | "tunes" | "strings" | "sun" | "paper";
 
 const TONE: Record<Tone, string> = {
   ink: "bg-ink text-paper",
-  tea: "bg-tea text-paper",
-  tunes: "bg-tunes text-paper",
+  tea: "bg-tea text-ink",
+  tunes: "bg-tunes text-ink",
   strings: "bg-strings text-ink",
   sun: "bg-sun text-ink",
   paper: "bg-paper text-ink",
 };
 
 const FLOOD: Record<Tone, string> = {
-  ink: "bg-tunes",
-  tea: "bg-ink",
-  tunes: "bg-ink",
+  ink: "bg-tea-deep",
+  tea: "bg-sun",
+  tunes: "bg-strings",
   strings: "bg-sun",
   sun: "bg-strings",
   paper: "bg-sun",
