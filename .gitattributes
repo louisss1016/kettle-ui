@@ -1,0 +1,3 @@
+# Built by npm run registry; review the component sources and build script.
+/registry.json linguist-generated=true
+/public/r/*.json linguist-generated=true

@@ -30,6 +30,8 @@ npm run build        # static export to out/
 3. Run `npm run registry`. This rewrites `registry.json` and `public/r/*.json`. Commit those generated files with your change, because the shadcn CLI installs from them.
 4. Add a demo to the docs site so people can see it (`components/docs/demos.tsx` or `gallery-demos.tsx`).
 
+`registry.json` and `public/r/*.json` are generated files. Edit the component source or `scripts/build-registry.mjs`, then run `npm run registry`; do not edit the generated JSON by hand. The registry items embed source code as escaped strings for the shadcn CLI. GitHub collapses these generated diffs by default; expand them when you need to inspect the installable output. Keep committing the generated files with your changes.
+
 ## Code style
 
 - TypeScript strict. Avoid `any`.
